@@ -2,29 +2,20 @@ module HelloGreeting {
     @ This is Hello Component
     active component Hello {
 
-        # One async command/port is required for active components
-        # This should be overridden by the developers with a useful command/port
-        @ TODO
-        async command TODO opcode 0
+        @ Command to issue greeting with maximum length of 20 characters
+        async command SAY_HI(
+            greeting: string size 50 
+        )
 
-        ##############################################################################
-        #### Uncomment the following examples to start customizing your component ####
-        ##############################################################################
+        @ Greeting event with maximum greeting length of 20 characters
+        event SayHiEvent(
+            greeting: string size 50 
+        ) \
+        severity activity high \
+        format "Commanded as : {}"
 
-        # @ Example async command
-        # async command COMMAND_NAME(param_name: U32)
-
-        # @ Example telemetry counter
-        # telemetry ExampleCounter: U64
-
-        # @ Example event
-        # event ExampleStateEvent(example_state: Fw.On) severity activity high id 0 format "State set to {}"
-
-        # @ Example port: receiving calls from the rate group
-        # sync input port run: Svc.Sched
-
-        # @ Example parameter
-        # param PARAMETER_NAME: U32
+        @ A count of the number of greetings issued
+        telemetry HiCount: U32
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #

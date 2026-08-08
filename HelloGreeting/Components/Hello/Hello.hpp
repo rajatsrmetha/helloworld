@@ -28,13 +28,14 @@ class Hello final : public HelloComponentBase {
     // ----------------------------------------------------------------------
     // Handler implementations for commands
     // ----------------------------------------------------------------------
-
-    //! Handler implementation for command TODO
+    U32 m_HiCount = 0;
+    
+    //! Handler implementation for command SAY_HI
     //!
-    //! TODO
-    void TODO_cmdHandler(FwOpcodeType opCode,  //!< The opcode
-                         U32 cmdSeq            //!< The command sequence number
-                         ) override;
+    //! Command to issue greeting with maximum length of 20 characters
+    void SAY_HI_cmdHandler(FwOpcodeType opCode,  //!< The opcode
+                           U32 cmdSeq,           //!< The command sequence number
+                           const Fw::CmdStringArg& greeting) override;
 };
 
 }  // namespace HelloGreeting

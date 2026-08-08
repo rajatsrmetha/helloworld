@@ -20,8 +20,13 @@ Hello ::~Hello() {}
 // Handler implementations for commands
 // ----------------------------------------------------------------------
 
-void Hello ::TODO_cmdHandler(FwOpcodeType opCode, U32 cmdSeq) {
-    // TODO
+void Hello ::SAY_HI_cmdHandler(FwOpcodeType opCode, U32 cmdSeq, const Fw::CmdStringArg& greeting) {
+
+    Fw::LogStringArg eventGreeting(greeting.toChar());
+    this->log_ACTIVITY_HI_SayHiEvent(eventGreeting);
+
+    this->tlmWrite_HiCount(++this->m_HiCount);
+    
     this->cmdResponse_out(opCode, cmdSeq, Fw::CmdResponse::OK);
 }
 
