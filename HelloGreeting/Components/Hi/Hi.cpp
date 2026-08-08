@@ -20,8 +20,9 @@ Hi ::~Hi() {}
 // Handler implementations for commands
 // ----------------------------------------------------------------------
 
-void Hi ::TODO_cmdHandler(FwOpcodeType opCode, U32 cmdSeq) {
-    // TODO
+void Hi ::INTRODUCE_ME_cmdHandler(FwOpcodeType opCode, U32 cmdSeq) {
+  
+    this->log_ACTIVITY_HI_IntroEvent();
     this->cmdResponse_out(opCode, cmdSeq, Fw::CmdResponse::OK);
 }
 

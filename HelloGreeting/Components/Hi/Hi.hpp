@@ -29,12 +29,12 @@ class Hi final : public HiComponentBase {
     // Handler implementations for commands
     // ----------------------------------------------------------------------
 
-    //! Handler implementation for command TODO
+    //! Handler implementation for command INTRODUCE_ME
     //!
-    //! TODO
-    void TODO_cmdHandler(FwOpcodeType opCode,  //!< The opcode
-                         U32 cmdSeq            //!< The command sequence number
-                         ) override;
+    //! Command to issue greeting with maximum length of 20 characters
+    void INTRODUCE_ME_cmdHandler(FwOpcodeType opCode,  //!< The opcode
+                                 U32 cmdSeq            //!< The command sequence number
+                                 ) override;
 };
 
 }  // namespace HelloGreeting
