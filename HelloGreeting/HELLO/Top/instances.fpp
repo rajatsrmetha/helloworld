@@ -46,6 +46,11 @@ module HelloGreeting {
     stack size Default.STACK_SIZE \
     priority 40
 
+  instance HelloCmpInstance: Hello base id 0x10005000 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 50
+    
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------

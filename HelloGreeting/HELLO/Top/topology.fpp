@@ -32,7 +32,7 @@ module HelloGreeting {
     instance timer
     instance comDriver
     instance cmdSeq
-
+    instance HelloCmpInstance
   # ----------------------------------------------------------------------
   # Pattern graph specifiers
   # ----------------------------------------------------------------------
