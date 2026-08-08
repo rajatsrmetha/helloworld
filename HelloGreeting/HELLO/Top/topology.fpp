@@ -33,6 +33,7 @@ module HelloGreeting {
     instance comDriver
     instance cmdSeq
     instance HelloCmpInstance
+    instance HiCmpInstance
   # ----------------------------------------------------------------------
   # Pattern graph specifiers
   # ----------------------------------------------------------------------
