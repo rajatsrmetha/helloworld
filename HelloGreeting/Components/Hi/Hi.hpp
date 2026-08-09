@@ -31,7 +31,7 @@ class Hi final : public HiComponentBase {
 
     //! Handler implementation for command INTRODUCE_ME
     //!
-    //! Command to issue greeting with maximum length of 20 characters
+    //! Command that emits an introduction event
     void INTRODUCE_ME_cmdHandler(FwOpcodeType opCode,  //!< The opcode
                                  U32 cmdSeq            //!< The command sequence number
                                  ) override;

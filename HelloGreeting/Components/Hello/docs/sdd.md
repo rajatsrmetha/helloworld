@@ -51,4 +51,4 @@ The deployed instance uses a queue size of 10, a 64 KiB stack, priority 50, and 
 - `HiCount` is stored only in memory.
 - Queue-full behavior is handled by F´.
 - Automated component tests are not implemented.
-- The effective greeting limit is 50 characters, although some source comments incorrectly mention 20.
+- Greetings are limited to 50 characters by the FPP interface.

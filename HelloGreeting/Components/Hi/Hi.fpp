@@ -2,10 +2,10 @@ module HelloGreeting {
     @ Component for F Prime FSW framework.
     active component Hi {
 
-        @ Command to issue greeting with maximum length of 20 characters
+        @ Command that emits an introduction event
         async command INTRODUCE_ME()
 
-        @ Greeting event with maximum greeting length of 20 characters
+        @ Introduction event
         event IntroEvent(
         ) \
         severity activity high \

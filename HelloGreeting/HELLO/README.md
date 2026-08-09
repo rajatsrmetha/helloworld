@@ -51,8 +51,9 @@ Both `-a` and `-p` are required for a GDS connection. Use `-h` to display comman
 - A TCP client connects the application to the GDS.
 - `CdhCore` handles commands, events, telemetry, and health monitoring.
 - `ComCcsds` handles CCSDS uplink and downlink data.
-- `FileHandling` provides file transfer, parameters, and command sequences.
+- `FileHandling` provides file transfer and parameter storage.
 - `DataProducts` provides data-product storage services.
+- `Svc.CmdSequencer` runs stored command sequences.
 - The application uses a 1 Hz timer and rate groups running at 1 Hz, 1/2 Hz, and 1/4 Hz.
 
 Press `Ctrl-C` to stop the deployment cleanly.

@@ -32,7 +32,7 @@ class Hello final : public HelloComponentBase {
     
     //! Handler implementation for command SAY_HI
     //!
-    //! Command to issue greeting with maximum length of 20 characters
+    //! Command to issue a greeting with a maximum length of 50 characters
     void SAY_HI_cmdHandler(FwOpcodeType opCode,  //!< The opcode
                            U32 cmdSeq,           //!< The command sequence number
                            const Fw::CmdStringArg& greeting) override;

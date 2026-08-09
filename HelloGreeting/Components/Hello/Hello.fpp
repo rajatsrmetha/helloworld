@@ -2,14 +2,14 @@ module HelloGreeting {
     @ This is Hello Component
     active component Hello {
 
-        @ Command to issue greeting with maximum length of 20 characters
+        @ Command to issue a greeting with a maximum length of 50 characters
         async command SAY_HI(
-            greeting: string size 50 
+            greeting: string size 50
         )
 
-        @ Greeting event with maximum greeting length of 20 characters
+        @ Greeting event with a maximum greeting length of 50 characters
         event SayHiEvent(
-            greeting: string size 50 
+            greeting: string size 50
         ) \
         severity activity high \
         format "Commanded as : {}"
